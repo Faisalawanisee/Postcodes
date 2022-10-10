@@ -11,7 +11,7 @@ With thanks to https://postcodes.io
 ## Installation
 
 ```
-composer require codescheme/postcodes
+composer require faisalawanisee/postcodes
 ```
 
 For Laravel *Postcodes* will be automatically discovered.
