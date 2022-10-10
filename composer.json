@@ -1,0 +1,41 @@
+{
+    "name": "faisalawanisee/postcodes",
+    "description": "UK Postcode API Facade for Laravel 9",
+    "keywords": ["postcodes", "postcode","laravel", "laravel 9", "api", "json"],
+    "license": "MIT",
+    "homepage": "https://github.com/faisalawanisee",
+    "authors": [
+        {
+            "name": "Faisal",
+            "email": "faisalawan.live@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "require-dev": {
+        "phpunit/phpunit": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "Faisalawanisee\\Postcodes\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Faisalawanisee\\Postcodes\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Faisalawanisee\\Postcodes\\PostcodeServiceProvider"
+            ],
+            "aliases": {
+                "Postcode": "Faisalawanisee\\Postcodes\\Facades\\Postcode"
+            }
+        }
+    }
+}
